@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+	
+    <!-- 复用代码，修改一处对应所有的头都有修改操作 -->
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    <!-- 不断的去切换左侧条目对应内容页中的内容 -->
+    <FrameLayout
+        android:layout_below="@id/title_bar"
+        android:id="@+id/news_center_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
