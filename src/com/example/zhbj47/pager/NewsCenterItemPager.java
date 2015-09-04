@@ -176,7 +176,6 @@ public class NewsCenterItemPager extends BasePager {
 				//展示详情界面的url地址，webView--->Html
 				intent.putExtra("url", newList.get(position-1).url);
 				context.startActivity(intent);
-
 			}
 		});
 
